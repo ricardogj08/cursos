@@ -64,7 +64,7 @@ Eliminar una tabla de la base de datos seleccionada:
 
 	DROP TABLE tblname;
 
-Listar todas las tablas de las base de datos seleccionada:
+Listar todas las tablas de la base de datos seleccionada:
 
 	SHOW TABLES;
 
@@ -74,7 +74,7 @@ Eliminar una base de datos existente:
 
 Ejecutar comandos y sentencias SQL desde la línea de comandos:
 
-sudo mysql -u root -p -e 'DESCRIBE mysql.user;'
+	sudo mysql -u root -p -e 'DESCRIBE mysql.user;'
 
 Ejecutar comandos y sentencias SQL desde un archivo externo:
 
@@ -131,7 +131,7 @@ Mostrar la ruta del directorio donde se almacenan todas las bases de datos:
 
 ### MERGE
 
-* Vincula varias tablas MyISAM para presentarlas como una sola.
+* Vincula varias tablas MyISAM para representarlas en una sola.
 * No transaccional.
 * Útil para grandes volúmenes de datos.
 * No soporta un sistema de recuperación ante fallos.
@@ -154,14 +154,14 @@ Mostrar la ruta del directorio donde se almacenan todas las bases de datos:
 
 ### FederatedX
 
-* Distribuye una base de datos en varios equipos para presentarlo como uno solo.
+* Distribuye una base de datos en varios equipos para representarlo en uno solo.
 * Útil en entornos distribuidos.
 
 ## Tipos de datos
 
 ### Numéricos
 
-* Enteros: se diferencian por el rango de valores que se puede almacenar.
+* Enteros: se distinguen por el rango de valores que se puede almacenar.
 	* TINYINT/INT1
     * SMALLINT/INT2
     * MEDIUMINT/INT3
@@ -196,7 +196,7 @@ Mostrar la ruta del directorio donde se almacenan todas las bases de datos:
 * DATE (fecha)
 * TIME (hora)
 * DATETIME (fecha y hora)
-* TIMESTAMP (número de segundos desde 01/01/1970 00:00)
+* TIMESTAMP (número de segundos desde el 01/01/1970 00:00)
 * YEAR (año)
 
 ### Espaciales
