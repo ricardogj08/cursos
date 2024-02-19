@@ -321,6 +321,6 @@ Visualizar todos los privilegios de una cuenta de usuario:
 ## Referencias
 
 * [freeCodeCamp - MySQL Course for Beginners.](https://youtu.be/uWkcxasFWzQ?si=bOin7Rg932PvYQd7)
-* [EDteam - Curso: MySQL](https://ed.team/cursos/mysql)
+* [EDteam - Curso: MySQL.](https://ed.team/cursos/mysql)
 * [freeCodeCamp - MySQL Database.](https://youtu.be/ER8oKX5myE0?si=YOBYm6na00rVLC-C)
 * [MariaDB Server Documentation.](https://mariadb.com/kb/en/documentation)

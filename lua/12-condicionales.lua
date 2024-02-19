@@ -30,7 +30,7 @@ end
 
 local users = { 'Ricardo', 'Alejandra', 'Paco', 'Juan' }
 
--- Else
+-- Else.
 for i, v in ipairs(users) do
   if v == 'Alejandra' then
     print(v, ':)')
@@ -41,7 +41,7 @@ end
 
 local age = 60
 
--- Else if
+-- Else if.
 if age >= 60 then
   print('Mayor de edad')
 elseif age >= 30 then

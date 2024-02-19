@@ -12,7 +12,7 @@ print(tbl['msg'])
 
 local web = { 'PHP', 'CodeIgniter', 'Lua', 'OpenResty' }
 
--- Itera sobre una tabla indexada
+-- Itera sobre una tabla indexada.
 for i, v in ipairs(web) do
   print(i, v)
 end
@@ -23,7 +23,7 @@ local user = {
   gender = 'Masculino'
 }
 
--- Itera sobre una tabla asociativa
+-- Itera sobre una tabla asociativa.
 for k, v in pairs(user) do
   print(k, v)
 end

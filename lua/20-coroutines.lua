@@ -4,10 +4,10 @@ end)
 
 print(type(corrutina))
 
--- Obtiene el estatus de una corrutina
+-- Obtiene el estatus de una corrutina.
 print(coroutine.status(corrutina))
 
--- Inicia la ejecución de una corrutina
+-- Inicia la ejecución de una corrutina.
 coroutine.resume(corrutina)
 
 print(coroutine.status(corrutina))

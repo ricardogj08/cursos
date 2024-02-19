@@ -8,7 +8,7 @@ Liliana
 García
 Flores]]
 
--- type() Imprime el tipo de dato
+-- type() - Imprime el tipo de dato.
 
 print(type(nil))
 print(nil)

@@ -2,7 +2,7 @@ for i = 1, 10 do
   print(i)
 end
 
--- Bucle con saltos
+-- Bucle con saltos.
 for i = 1, 10, 2 do
   print(i)
 end

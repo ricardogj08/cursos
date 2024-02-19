@@ -1,9 +1,9 @@
--- Variable global
+-- Variable global.
 x = 5
 
--- Bloque o chunck
+-- Bloque o chunck.
 do
-  -- Variable con scope
+  -- Variable con scope.
   local y = 2
   print(x, y)
 end
@@ -12,7 +12,7 @@ print(x, y)
 
 local z = 5
 
--- Chunck
+-- Chunck.
 do
   local z = 3
   print(z)

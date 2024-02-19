@@ -17,9 +17,9 @@ whiptail \
   'Selecciona una opción:' \
   "${height}" \
   "${width}" \
-  "${numitems}"  \
-  'NET_OUTBOUND' 'Allow connections to other hosts' 0 \
-  'NET_INBOUND' 'Allow connections from other hosts' 0 \
-  'LOCAL_MOUNT' 'Allow mounting of local devices' 1 \
-  'REMOTE_MOUNT' 'Allow mounting of remote devices' 0
+  "${numitems}" \
+  'NET_OUTBOUND' 'Allow connections to other hosts.' 0 \
+  'NET_INBOUND' 'Allow connections from other hosts.' 0 \
+  'LOCAL_MOUNT' 'Allow mounting of local devices.' 1 \
+  'REMOTE_MOUNT' 'Allow mounting of remote devices.' 0
 

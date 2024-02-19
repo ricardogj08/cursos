@@ -4,6 +4,7 @@ end
 
 sumar(8, 2)
 
+-- Return.
 local function restar(x, y)
   return x - y
 end
@@ -18,7 +19,6 @@ end
 
 imprimir('Ricardo', 'García', 'Jiménez')
 
--- Return
 local function search(array, item)
   for k, v in ipairs(array) do
     if item == v then
@@ -28,7 +28,7 @@ local function search(array, item)
   end
 end
 
--- Múltiples valores
+-- Return con múltiples valores.
 local function alpha()
   return 'a', 'b', 'c'
 end
@@ -41,14 +41,14 @@ local users = { 'Ricardo', 'Alejandra', 'Sharai', 'Paco', 'Juan' }
 
 search(users, 'Alejandra')
 
--- Declaración alternativa
+-- Declaración alternativa.
 local saludo = function()
   print('Hola Mundo! :)')
 end
 
 saludo()
 
--- Función global
+-- Función global.
 function pow(number, base)
   return number ^ base
 end
