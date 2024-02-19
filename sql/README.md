@@ -9,8 +9,6 @@
 * [EDteam - ¿SQL o NoSQL? ¿Cuál base de datos es mejor?](https://youtu.be/8K1PKSqHFRQ?si=pp8da10EhtodAgHV)
 * [NoSQL vs SQL – Which Type of Database Should You Use?](https://youtu.be/FzlpwoeSrE0?si=mGaPW39Scu0gbd0_)
 * [SQL - Intro to Computer Science - Harvard's CS50 (2018).](https://youtu.be/TplT4qjz1RQ?si=P454xpzaRlR-Egzq)
-* [SQL Tutorial - Full Database Course for Beginners.](https://youtu.be/HXV3zeQKqGY?si=xyUq2O_OJgmxAash)
-* [SQL Tutorial for Beginners (and Technical Interview Questions Solved).](https://youtu.be/-fW2X7fh7Yg?si=aXnT9liZ2Xsr3ZeJ)
 * [SQL For Web Developers - Complete Database Course.](https://youtu.be/KBDSJU3cGkc?si=q8Awo5fMEiCZyww9)
 * [CREATE TABLE](https://www.sqlite.org/lang_createtable.html)
 * [DROP TABLE](https://www.sqlite.org/lang_droptable.html)

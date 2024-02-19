@@ -15,7 +15,7 @@ INSERT INTO students(name, major) VALUES('Mike', 'Computer Science');
 
 SELECT * FROM students;
 
-/**
+/*
  * Actualiza la información de todos los
  * registros que cumplen con la condición.
  */
@@ -46,7 +46,7 @@ UPDATE students SET major = 'Undecided';
 
 SELECT * FROM students;
 
-/**
+/*
  * Elimina todos los registros
  * de la tabla de estudiantes.
  */
@@ -56,7 +56,7 @@ DELETE FROM students WHERE id = 5;
 
 SELECT * FROM students;
 
-/**
+/*
  * Elimina todos los registros
  * que cumplen con la condición.
  */

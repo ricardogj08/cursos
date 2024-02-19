@@ -8,7 +8,7 @@ CREATE TABLE students (
 -- Modo de salida.
 .mode table
 
-/**
+/*
  * Muestra la sentencia SQL
  * de la creación de la tabla.
  */
@@ -20,7 +20,7 @@ PRAGMA table_xinfo(students);
 -- Elimina la tabla de estudiantes.
 --DROP TABLE students;
 
-/**
+/*
  * Agrega una nueva columna
  * en la tabla de estudiantes.
  */
@@ -28,7 +28,7 @@ ALTER TABLE students ADD gpa DECIMAL(3, 2);
 
 PRAGMA table_info(students);
 
-/**
+/*
  * Elimina la columna "gpa"
  * de la tabla de estudiantes.
  */
