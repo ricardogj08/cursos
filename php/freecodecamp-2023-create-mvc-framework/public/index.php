@@ -32,6 +32,14 @@ $app = new \App\Core\Application(dirname(__DIR__), $config);
 
 //$app->router->get('/', 'home');
 
+//$app->on(\App\Core\Application::EVENT_BEFORE_REQUEST, function () {
+//    echo 'Ejecución de un evento antes de la petición.';
+//});
+
+//$app->on(\App\Core\Application::EVENT_AFTER_REQUEST, function () {
+//    echo 'Ejecución de un evento después de la petición.';
+//});
+
 $app->router->get('/', [\App\Controllers\PageController::class, 'home']);
 
 $app->router->get('/contacto', [\App\Controllers\ContactController::class, 'create']);
