@@ -1,0 +1,40 @@
+[class=title] {
+    color: blue;
+}
+
+[type=text],
+[type=password] {
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+[type=submit] {
+    display: inline-block;
+    padding: .75em 1.5em;
+    background: dodgerblue;
+    color: white;
+    border-radius: .5em;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+[href^="http://"] {
+    border-bottom: 1px dashed red;
+}
+
+[href$=".jpg"] {
+    color: green;
+}
+
+[href$=".pdf"] {
+    color: blue;
+}
+
+a {
+    background: pink;
+}
+
+[href*="ed.team"] {
+    background: yellow;
+}

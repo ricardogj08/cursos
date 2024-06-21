@@ -1,0 +1,39 @@
+.div-center {
+    width: 100px;
+    height: 100px;
+    background: blue;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    text-align: center;
+}
+
+.div-inline-center {
+    background: red;
+
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    display: inline;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ccc;
+    background: #eee;
+    text-align: center;
+}
+
+.card-image {
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin: 0;
+}

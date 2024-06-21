@@ -1,0 +1,20 @@
+body {
+    color: blue;
+}
+
+h1 {
+    background: skyblue;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    /* box-shadow: 1px 1px 2px 2px; */
+}
+
+h1:hover {
+    border-color: dodgerblue;
+    /* border-color: currentColor; */
+}
+
+span {
+    background: transparent;
+    color: transparent;
+}

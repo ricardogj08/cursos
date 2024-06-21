@@ -1,0 +1,42 @@
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 10px 0;
+}
+
+.color-red {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.color-yellow {
+    background-color: hsl(60, 100%, 50%);
+}
+
+.color-green {
+    background-color: hsl(120, 100%, 50%);
+}
+
+.color-cyan {
+    background-color: hsl(180, 100%, 50%);
+}
+
+.color-blue {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.color-magenta {
+    background-color: hsl(300, 100%, 50%);
+}
+
+.color-red {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.color-dark {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.color-white {
+    background-color: hsl(0, 100%, 100%);
+}

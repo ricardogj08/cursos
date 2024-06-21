@@ -1,0 +1,54 @@
+.triangulos-box {
+    width: 0;
+    margin: 2em auto 0;
+    background: yellow;
+    border: 50px solid;
+    border-color: red black;
+}
+
+.triangulo-rectangulo {
+    width: 0;
+    margin: 2em auto 0;
+    border: 50px solid red;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.triangulo-isosceles {
+    width: 0;
+    margin: 2em auto 0;
+    border: 80px solid red;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;  
+}
+
+.radius {
+    width: 200px;
+    height: 100px;
+    background: yellow;
+    margin: 2em auto 0;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.elipse {
+    width: 200px;
+    height: 100px;
+    background: skyblue;
+    margin: 2em auto 0;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.figura {
+    width: 200px;
+    height: 100px;
+    background: orange;
+    margin: 2em auto 0;
+    border: 2px solid black;   
+    /* border-radius: 25px / 75px; */
+    border-radius:
+        120px 120px 10px 10px /
+        10px 10px 20px 20px;
+}

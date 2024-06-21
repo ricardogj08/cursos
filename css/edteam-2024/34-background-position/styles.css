@@ -1,0 +1,21 @@
+.box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    background: url(https://www.mundodeportivo.com/alfabeta/hero/2022/05/Dragon-Ball-confirma-a-que-personaje-Goku-nunca-podra-ganarle.jpg) no-repeat;
+    background-size: cover;
+
+    /* Predeterminado */
+    /* background-position: 0 0; */
+
+    /* background-position: 10px 20px; */
+
+    /* background-size: 50%;
+    background-position: 90% 20%; */
+
+    background-size: 50%;
+    /* background-position: left center; */
+    /* background-position: center; */
+    /* background-position: right 10px bottom 10px; */
+    background-position: right 10px top 10px;
+}

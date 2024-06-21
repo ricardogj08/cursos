@@ -1,0 +1,89 @@
+.container {
+    text-align: center;
+    padding-top: 3em;
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    line-height: 60px;
+    margin: 10px 5px;
+}
+
+.element {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    line-height: 60px;
+    margin: 10px 5px;
+}
+
+/* Selecciona todos los hijos pares */
+/* .item:nth-child(even) {
+    background-color: red;
+} */
+
+/* Selecciona todos los hijos impares */
+/* .item:nth-child(odd) {
+    background-color: blue;
+} */
+
+/* Selecciona un hijo en específico */
+/* .item:nth-child(10) {
+    background-color: green;
+} */
+
+/* Selecciona todos los hijos con múltiplos */
+/* .item:nth-child(5n) {
+    background-color: red;
+} */
+
+/* Selecciona todos los hijos con ecuaciones */
+/* .item:nth-child(3n + 1) {
+    background-color: blue;
+} */
+
+/* Selecciona los n primeros hijos */
+/* .item:nth-child(-n + 5) {
+    background-color: green;
+} */
+
+/* Selecciona los n últimos hijos */
+/* .item:nth-last-child(-n + 5) {
+    background-color: red;
+} */
+
+/* Selecciona todos los hijos a partir de un hijo en específico */
+/* .item:nth-child(n + 8) {
+    background-color: blue;
+} */
+
+/* Selecciona todos los hijos a excepción de los últimos n hijos */
+/* .item:nth-last-child(n + 8) {
+    background-color: red;
+} */
+
+/* Selecciona todos los hijos pares que son múltiplos de 3 */
+/* .item:nth-child(even):nth-child(3n) {
+    background-color: green;
+} */
+
+/* Selecciona todos los hijos menores a 8 */
+.item:nth-child(even):nth-child(-n + 8) {
+    background-color: blue;
+}
+
+/* Selecciona todos los hijos de cada tipo con múltiplos */
+/* .element:nth-of-type(3n) {
+    background-color: red;
+} */
+
+/* Selecciona todos los hijos dentro de un selector */
+.element:nth-child(even of span) {
+    background-color: green;
+}

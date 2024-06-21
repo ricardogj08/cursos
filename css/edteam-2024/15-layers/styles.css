@@ -1,0 +1,27 @@
+/* Definición de jerarquía de cascada. */
+@layer theme;
+@layer base;
+@layer color;
+
+/* @layer theme, base, color; */
+
+/* Definición de estilos. */
+@layer base {
+    h1 {
+        color: blue;
+    }
+}
+
+@layer theme {
+    h1 {
+        color: red;
+    }
+
+    /* Sublayers */
+    /* @layer light {} */
+    /* @layer dark {} */
+}
+
+/* Equivalentes */
+/* @layer theme.light {} */
+/* @layer theme.dark {} */

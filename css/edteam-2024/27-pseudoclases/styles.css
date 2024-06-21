@@ -1,0 +1,57 @@
+/* :hover, :active, :visited */
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+    transition: all 2s;
+}
+
+a:active {
+    background: yellow;
+}
+
+a:visited {
+    color: blue;
+}
+
+/* :target, :not(), :empty */
+h2 {
+    display: inline-block;
+}
+
+p {
+    display: none;
+}
+
+p:target {
+    display: block;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    display: inline-block;
+    margin: 1em;
+    border-radius: 20px;
+}
+
+.container:hover .box:not(:hover) {
+    opacity: 0.3;
+}
+
+.square {
+    padding: 2em;
+    background: green;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 1em;
+}
+
+.square:empty {
+    display: none;
+}

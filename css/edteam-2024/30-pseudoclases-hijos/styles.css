@@ -1,0 +1,30 @@
+.container {
+    text-align: center;
+    padding-top: 3em;
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    line-height: 60px;
+    margin: 10px 5px;
+}
+
+/* .item:first-child {
+    background-color: green;
+} */
+
+.item:last-child {
+    background-color: blue;
+}
+
+.item:first-of-type {
+    background-color: greenyellow;
+}
+
+/* .item:last-of-type {
+    background-color: skyblue;
+} */

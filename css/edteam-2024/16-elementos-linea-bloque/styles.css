@@ -1,0 +1,15 @@
+h1 {
+    background: blue;
+    width: 200px;
+    height: 100px;
+}
+
+p {
+    background: yellow;
+    height: 100px;
+}
+
+span {
+    background: green;
+    /* height: 100px; */
+}

@@ -1,0 +1,22 @@
+.box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: yellow;
+    background-repeat: no-repeat;
+
+    background-image: url(https://www.mundodeportivo.com/alfabeta/hero/2022/05/Dragon-Ball-confirma-a-que-personaje-Goku-nunca-podra-ganarle.jpg),
+                      url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    
+    /* background-size: 50%, 60%; */
+
+    background-size: 50%;
+    background-position: 0 0, right 0;
+
+    /* Equivalente */
+    background: url(https://www.mundodeportivo.com/alfabeta/hero/2022/05/Dragon-Ball-confirma-a-que-personaje-Goku-nunca-podra-ganarle.jpg) 0 0 / 50% no-repeat,
+                url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) right 0 / 50% no-repeat,
+                yellow;
+
+    background-repeat: no-repeat;
+}

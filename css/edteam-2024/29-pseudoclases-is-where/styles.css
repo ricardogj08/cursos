@@ -1,0 +1,21 @@
+/* ul a,
+ul li,
+ul span {
+    color: red;
+} */
+
+/* Equivalente */
+ul :is(a, li, span) {
+    color: red;
+}
+
+/* h1 a,
+li a,
+span a {
+    color: green;
+} */
+
+/* Equivalente */
+:where(h1, li, span) a {
+    color: green;
+}

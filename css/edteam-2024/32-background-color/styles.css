@@ -1,0 +1,16 @@
+body {
+    background-color: skyblue;
+}
+
+/* h1 {
+    background-color: blue;
+    background-image: url(https://www.mundodeportivo.com/alfabeta/hero/2022/05/Dragon-Ball-confirma-a-que-personaje-Goku-nunca-podra-ganarle.jpg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+} */
+
+/* Equivalente */
+h1 {
+    background: blue url(https://www.mundodeportivo.com/alfabeta/hero/2022/05/Dragon-Ball-confirma-a-que-personaje-Goku-nunca-podra-ganarle.jpg) no-repeat;
+    background-size: 100px;
+}

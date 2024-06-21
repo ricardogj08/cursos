@@ -1,0 +1,64 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-medium {
+    font-weight: 500;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-line-height {
+    line-height: 2;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+.text-letter-spacing {
+    letter-spacing: 0.2em;
+}
+
+.text-word-spacing {
+    word-spacing: 2em;
+}

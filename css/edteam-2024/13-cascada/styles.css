@@ -1,0 +1,15 @@
+h1 {
+    color:red;
+    color: yellow;
+    color: blue;
+    border: 1px solid black;
+    border-left: none;
+}
+
+.subtitle {
+    color: green;
+}
+
+.subtitle {
+    color: magenta;
+}

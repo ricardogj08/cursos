@@ -1,0 +1,17 @@
+.gallery {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    
+    /* margin: 20px; */
+    
+    /* margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    margin-left: 20px; */
+    
+    /* Equivalente */
+    margin: 10px 5px 15px 20px;
+}

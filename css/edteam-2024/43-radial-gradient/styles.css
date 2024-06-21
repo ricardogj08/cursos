@@ -1,0 +1,33 @@
+div {
+    width: 600px;
+    height: 300px;
+    display: inline-block;
+    margin: 20px 20px 0;
+}
+
+.radial-simple {
+    background: radial-gradient(cyan, magenta, yellow);
+}
+
+.radial-stop {
+    background: radial-gradient(
+        cyan 100px,
+        magenta 100px,
+        magenta 200px,
+        yellow 200px
+    );
+}
+
+.radial-top-right {
+    background: radial-gradient(at top right, cyan, magenta, yellow);
+}
+
+.radial-radius {
+    background: radial-gradient(
+        200px 200px at center bottom,
+        cyan,
+        magenta,
+        magenta,
+        yellow
+    );
+}

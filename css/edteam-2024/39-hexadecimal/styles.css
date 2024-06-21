@@ -1,0 +1,35 @@
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 10px 0;
+}
+
+.color-red {
+    background-color: #ff0000;
+}
+
+.color-green {
+    background-color: #00ff00;
+}
+
+.color-blue {
+    /* background-color: #0000ff; */
+
+    /* Abreviación */
+    background-color: #00f;
+
+    /* background-color: #0000ffff; */
+}
+
+.color-blue-light {
+    background-color: #0000ff6a;
+}
+
+.color-dark {
+    background-color: #000000;
+}
+
+.color-white {
+    background-color: #ffffff;
+}

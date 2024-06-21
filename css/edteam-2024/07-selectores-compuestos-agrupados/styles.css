@@ -1,0 +1,9 @@
+.first-p,
+.second-p {
+    color: blue;
+    font-weight: bold;
+}
+
+.second-p {
+    font-size: 12px;
+}

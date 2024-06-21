@@ -1,0 +1,12 @@
+:root {
+    --color: skyblue;
+    --size: 8px;
+}
+
+body {
+    background: var(--color);
+}
+
+h1 {
+    font-size: calc(var(--size) * 4);
+}

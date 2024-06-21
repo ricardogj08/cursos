@@ -1,0 +1,42 @@
+body {
+    background: #333;
+}
+
+.box {
+    --size: 500px;
+    width: var(--size);
+    height: var(--size);
+    margin: 1em auto 0;
+    border-radius: 50%;
+    background:
+        /* Circulo oscuro pequeño */
+        radial-gradient(
+            10% 10% at 50% 25%,
+            black 50%,
+            transparent 50%
+        ),
+        /* Circulo oscuro grande */
+        radial-gradient(
+            50% 50% at 50% 25%,
+            white 50%,
+            transparent 50%
+        ),
+        /* Circulo blanco pequeño */
+        radial-gradient(
+            10% 10% at 50% 75%,
+            white 50%,
+            transparent 50%
+        ),
+        /* Circulo blanco grande */
+        radial-gradient(
+            50% 50% at 50% 75%,
+            black 50%,
+            transparent 50%
+        ),
+        /* División de blanco y oscuro del circulo principal */
+        linear-gradient(
+            to right,
+            white 50%,
+            black 50%
+        );
+}

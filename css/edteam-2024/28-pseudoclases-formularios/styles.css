@@ -1,0 +1,12 @@
+:required {
+    border: 2px solid red;
+}
+
+:checked {
+    box-shadow: 2px 2px 5px;
+}
+
+:focus {
+    outline: 2px solid green;
+    border-color: transparent;
+}

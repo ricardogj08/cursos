@@ -1,0 +1,31 @@
+* {
+    font-family: "Playwrite NZ", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    /* 16px * 4 */
+    font-size: 4rem;
+}
+
+p {
+    /* 16px * 2 */
+    font-size: 2rem;
+}
+
+span {
+    /* 16px * 2 * 0.5 */
+    font-size: 0.5em;
+}
+
+.button {
+    font-size: 2em;
+    text-decoration: none;
+    display: inline-block;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 2.5em;
+    padding: 0.5em 1.5em;
+}

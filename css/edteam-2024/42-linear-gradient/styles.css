@@ -1,0 +1,67 @@
+.box {
+    width: 600px;
+    height: 300px;
+    display: inline-block;
+    margin: 20px 20px 0;
+
+    /* min-height: 100vh; */
+}
+
+.linear-simple {
+    background: linear-gradient(cyan, blue, magenta) no-repeat;
+}
+
+.linear-hsl {
+    background: linear-gradient(
+        hsl(180, 100%, 50%),
+        hsl(240, 100%, 50%),
+        hsl(300, 100%, 50%)
+    );
+}
+
+.linear-stop {
+    background: linear-gradient(
+        hsl(180, 100%, 50%) 50px,
+        hsl(240, 100%, 50%) 100px,
+        hsl(300, 100%, 50%)
+    );
+}
+
+.linear-without-range {
+    background: linear-gradient(
+        hsl(180, 100%, 50%) 100px,
+        hsl(300, 100%, 50%) 100px,
+        hsl(300, 100%, 50%) 200px,
+        hsl(60, 100%, 50%) 200px
+    );
+}
+
+.linear-to-right {
+    background: linear-gradient(
+        to right,
+        hsl(180, 100%, 50%) 200px,
+        hsl(300, 100%, 50%) 200px,
+        hsl(300, 100%, 50%) 400px,
+        hsl(60, 100%, 50%) 400px
+    );
+}
+
+.linear-to-top-right {
+    background: linear-gradient(
+        to top right,
+        hsl(180, 100%, 50%) 200px,
+        hsl(300, 100%, 50%) 200px,
+        hsl(300, 100%, 50%) 400px,
+        hsl(60, 100%, 50%) 400px
+    );  
+}
+
+.linear-angle {
+    background: linear-gradient(
+        120deg,
+        hsl(180, 100%, 50%) 200px,
+        hsl(300, 100%, 50%) 200px,
+        hsl(300, 100%, 50%) 400px,
+        hsl(60, 100%, 50%) 400px
+    );  
+}

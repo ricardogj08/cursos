@@ -1,0 +1,10 @@
+.content {
+    background: yellow;
+    width: 100px;
+    height: 50px;
+    margin-inline-start: 50px;
+    margin-block-start: 50px;
+    display: inline-block;
+    writing-mode: vertical-rl;
+    /* direction: rtl; */
+}

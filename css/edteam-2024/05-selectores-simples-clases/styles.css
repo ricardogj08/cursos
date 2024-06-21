@@ -1,0 +1,41 @@
+.color-red {
+    color: red;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.color-green {
+    color: green;
+}
+
+.color-yellow {
+    color: yellow;
+}
+
+.bg-green {
+    background: green;
+}
+
+.bg-yellow {
+    background: yellow;
+}
+
+.bg-black {
+    background: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: .75em 1.5em;
+    background: dodgerblue;
+    color: white;
+    border-radius: .5em;
+    cursor: pointer;
+    text-decoration: none;
+}

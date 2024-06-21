@@ -1,0 +1,31 @@
+/* .container {
+    color: red;
+    border: 1px solid;
+} */
+
+/*
+ * Hereda a la fuerza todos los
+ * estilos del elemento padre.
+ */
+/* .container * {
+    border: inherit;
+} */
+
+.theme-light {
+    background: #eee;
+    color: #111;
+}
+
+.theme-dark {
+    background: #111;
+    color: #eee;
+}
+
+a {
+    color: inherit;
+}
+
+/* .container li {
+    color: initial;
+}
+ */
