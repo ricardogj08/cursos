@@ -12,9 +12,9 @@ Curso: Java desde Cero 2024
 ## Introducción
 
 * Java es un lenguaje de programación de alto nivel orientada a objetos.
-* Máquina virtual (Java Virtual Machine o JVM): transforma el código fuente a bytecode para ser ejecutado en cualquier sistema operativo.
-* Java Runtime Environment (JRE): incluye la máquina virtual y asigna los recursos necesarios para ejecutar una aplicación en Java.
-* Java Development Kit o JDK: es un conjunto de utilidades para desarrollar, depurar y ejecutar aplicaciones en Java.
+* **Máquina virtual (Java Virtual Machine o JVM)**: transforma el código fuente a bytecode para ser ejecutado en cualquier sistema operativo.
+* **Java Runtime Environment (JRE)**: incluye la máquina virtual y asigna los recursos necesarios para ejecutar una aplicación en Java.
+* **Java Development Kit o JDK**: es un conjunto de utilidades para desarrollar, depurar y ejecutar aplicaciones en Java.
 * Variable: es un espacio en la memoria del computador donde se puede almacenar y modificar datos durante la ejecución de un programa.
 * Constantes: es un espacio en la memoria del computador donde se almacena un dato que no puede cambiar durante la ejecución de un programa.
 
@@ -78,16 +78,16 @@ La escritura de datos en Java se realiza utilizando la clase `System.out`.
 
 ## POO
 
-* Abstracción: es el proceso de definir los atributos y los métodos de una clase.
-* Encapsulamiento: protege la información de manipulaciones no autorizadas.
-* Polimorfismo: da la misma orden a varios objetos para que respondan de diferentes manera.
-* Herencia: las clases hijos heredan atributos y métodos de la clase padre.
-* Clase: es un modelo o plantilla para crear objetos que define las características (atributos) y comportamientos (métodos) comunes que tendrán los objetos.
-* Objeto: es una entidad (instancia) con características y acciones específicas, creada a partir de una clase.
-* Constructor: es un método especial dentro de una clase que se utiliza para inicializar los objetos de esa clase. Su propósito principal es establecer los valores iniciales de los atributos del objeto y realizar cualquier otra inicialización necesaria.
-* Clase abstracta: es una clase que no se puede instanciar y contiene métodos abstractos que no tienen implementación, y que serán implementados en las clases hijas.
-* this: hace referencia a métodos y atributos dentro de la misma clase.
-* super: hace referencia a métodos y atributos de la clase padre dentro de una clase hija.
+* **Abstracción**: es el proceso de definir los atributos y los métodos de una clase.
+* **Encapsulamiento**: protege la información de manipulaciones no autorizadas.
+* **Polimorfismo**: da la misma orden a varios objetos para que respondan de diferentes manera.
+* **Herencia**: las clases hijos heredan atributos y métodos de la clase padre.
+* **Clase**: es un modelo o plantilla para crear objetos que define las características (atributos) y comportamientos (métodos) comunes que tendrán los objetos.
+* **Objeto**: es una entidad (instancia) con características y acciones específicas, creada a partir de una clase.
+* **Constructor**: es un método especial dentro de una clase que se utiliza para inicializar los objetos de esa clase. Su propósito principal es establecer los valores iniciales de los atributos del objeto y realizar cualquier otra inicialización necesaria.
+* **Clase abstracta**: es una clase que no se puede instanciar y contiene métodos abstractos que no tienen implementación, y que serán implementados en las clases hijas.
+* `this`: hace referencia a métodos y atributos dentro de la misma clase.
+* `super`: hace referencia a métodos y atributos de la clase padre dentro de una clase hija.
 
 ## Interfaces
 
@@ -115,12 +115,14 @@ La escritura de datos en Java se realiza utilizando la clase `System.out`.
 * Son estructuras similares a los arrays pero su tamaño puede variar con el tiempo.
 * Las colecciones se encuentran en la API de Java "Collection".
 * Tipos:
-  * Listas: permite almacenar elementos duplicados.
+  * **Listas**: permite almacenar elementos duplicados.
     * Mantiene el orden de inserción de los elementos.
     * Proporciona acceso a los elemento por índice.
     * Implementaciones comunes: `ArrayList`, `LinkedList` y `Vector`.
-  * Set o conjuntos: permite almacenar elementos únicos.
-  * Mapas o diccionarios: permite almacenar elementos en tuplas (2 columnas), con el identificador y el valor del elemento.
+  * **Set o conjuntos**: permite almacenar elementos únicos.
+    * No se pueden ordenar.
+    * Los elementos no se pueden modificar directamente.
+  * **Mapas o diccionarios**: permite almacenar elementos en tuplas (2 columnas), con el identificador y el valor del elemento.
 
 ## Excepciones
 
