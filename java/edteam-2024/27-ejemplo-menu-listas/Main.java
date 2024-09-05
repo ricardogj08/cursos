@@ -61,6 +61,7 @@ class Main {
     System.out.println("7. Salir");
   }
 
+  // Agrega un nuevo estudiante a la lista.
   private static void addStudent() {
     String name = "", dni = "";
 

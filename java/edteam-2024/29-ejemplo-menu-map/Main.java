@@ -6,7 +6,7 @@ class Main {
   // Atributos que pertenecen a la clase y
   // no a las instancias individuales de los objetos.
   private static Scanner scanner = new Scanner(System.in);
-  private static Map<Integer, Student> studentsList = new HashMap<>();
+  private static Map<Integer, Student> studentsMap = new HashMap<>();
 
   public static void main(String[] args) {
     int option = 0;
@@ -60,10 +60,74 @@ class Main {
     System.out.println("7. Salir");
   }
 
-  private static void addStudent() {}
+  // Agrega un nuevo estudiante al mapa.
+  private static void addStudent() {
+    String name = "", dni = "";
+
+    // Captura el nombre del nuevo estudiante.
+    do {
+      System.out.print("Ingresa el nombre del estudiante: ");
+      name = scanner.nextLine();
+
+      // Valida que el nombre sea único.
+      if (!containsStudentByName(name))
+        break;
+
+      System.out.println("El nombre del estudiante ya se encuentra registrado!!");
+
+    } while (true);
+
+    // Captura el DNI del nuevo estudiante.
+    do {
+      System.out.print("Ingresa el DNI del estudiante: ");
+      dni = scanner.nextLine();
+
+      // Valida que el DNI sea único.
+      if (!containsStudentByDni(dni))
+        break;
+
+      System.out.println("El DNI del estudiante ya se encuentra registrado!!");
+    } while (true);
+
+    int studentId = generateUniqueId();
+
+    // Almacena la información del nuevo estudiante.
+    studentsMap.put(studentId, new Student(studentId, name, dni));
+
+    System.out.println("La información del estudiante se registró correctamente!!");
+  }
+
+  // Elimina un estudiante registrado utilizando su DNI.
   private static void removeStudent() {}
-  private static void listStudents() {}
+
+  // Muestra todos los estudiantes registrados.
+  private static void listStudents() {
+    studentsMap.values().forEach(System.out::println);
+  }
+
+  // Filtra el mapa de estudiantes por nombre.
   private static void filterStudentsByName() {}
+
+  // Modifica la información del estudiante desde su DNI.
   private static void modifyStudent() {}
+
+  // Filtra el mapa de estudiantes por nombre con letra "A".
   private static void filterStudentsByLetterA() {}
+
+  // Valida si el nombre del estudiante existe en el mapa.
+  private static boolean containsStudentByName(String name) {
+    return studentsMap.values().stream()
+      .anyMatch(student -> student.getName().equalsIgnoreCase(name));
+  }
+
+  // Valida si el DNI del estudiante existe en el mapa.
+  private static boolean containsStudentByDni(String dni) {
+    return studentsMap.values().stream()
+      .anyMatch(student -> student.getDni().equals(dni));
+  }
+
+  // Genera un ID único para el estudiante.
+  private static int generateUniqueId() {
+    return studentsMap.size() + 1;
+  }
 }
