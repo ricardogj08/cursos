@@ -1,13 +1,12 @@
 import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Set;
+import java.util.HashSet;
 
 class Main {
   // Atributos que pertenecen a la clase y
   // no a las instancias individuales de los objetos.
   private static Scanner scanner = new Scanner(System.in);
-  private static List<Student> studentsList = new ArrayList<>();
+  private static Set<Student> studentsSet = new HashSet<>();
 
   public static void main(String[] args) {
     int option = 0;
@@ -19,7 +18,7 @@ class Main {
       option = scanner.nextInt();
       scanner.nextLine(); // Limpia el buffer del scanner.
 
-      switch(option) {
+      switch (option) {
         case 1:
           addStudent();
           break;
@@ -33,7 +32,7 @@ class Main {
           filterStudentsByName();
           break;
         case 5:
-          sortStudentsByName();
+          filterStudentsByLetterA();
           break;
         case 6:
           modifyStudent();
@@ -44,7 +43,7 @@ class Main {
         default:
           System.out.println("Opción no válida!!");
       }
-    } while(option != 7);
+    } while (option != 7);
 
     scanner.close();
   }
@@ -56,12 +55,12 @@ class Main {
     System.out.println("2. Eliminar Estudiante");
     System.out.println("3. Listar Estudiantes");
     System.out.println("4. Filtrar Estudiantes por Nombre");
-    System.out.println("5. Ordenar Estudiantes por Nombre");
+    System.out.println("5. Filtrar Estudiantes por Nombre con letra 'A' o 'a'");
     System.out.println("6. Modificar Estudiante");
     System.out.println("7. Salir");
   }
 
-  // Agrega un nuevo estudiante a la lista.
+  // Agrega un nuevo estudiante al conjunto.
   private static void addStudent() {
     String name = "", dni = "";
 
@@ -74,8 +73,8 @@ class Main {
       if (! containsStudentByName(name)) break;
 
       System.out.println("El nombre del estudiante ya se encuentra registrado!!");
-      
-    } while(true);
+
+    } while (true);
 
     // Captura el DNI del nuevo estudiante.
     do {
@@ -86,10 +85,10 @@ class Main {
       if (! containsStudentByDni(dni)) break;
 
       System.out.println("El DNI del estudiante ya se encuentra registrado!!");
-    } while(true);
+    } while (true);
 
     // Almacena la información del nuevo estudiante.
-    studentsList.add(new Student(generateUniqueId(), name, dni));
+    studentsSet.add(new Student(generateUniqueId(), name, dni));
 
     System.out.println("La información del estudiante se registró correctamente!!");
   }
@@ -100,10 +99,10 @@ class Main {
 
     String studentDniToRemove = scanner.nextLine();
 
-    // Elimina el estudiante de la lista de estudiantes.
-    boolean removedStudent = studentsList.removeIf(student -> student.getDni().equals(studentDniToRemove));
+    // Elimina el estudiante del conjunto de estudiantes.
+    boolean removedStudent = studentsSet.removeIf(student -> student.getDni().equals(studentDniToRemove));
 
-    // Valida si el estudiante se encontraba dentro de la lista.
+    // Valida si el estudiante se encontraba dentro del conjunto.
     if (removedStudent) {
       System.out.println("El estudiante se ha eliminado correctamente!!");
     } else {
@@ -113,19 +112,19 @@ class Main {
 
   // Muestra todos los estudiantes registrados.
   private static void listStudents() {
-    System.out.println(studentsList);
+    System.out.println(studentsSet);
   }
 
-  // Filtra la lista de estudiantes por nombre.
+  // Filtra el conjunto de estudiantes por nombre.
   private static void filterStudentsByName() {
     System.out.print("Ingresa el parámetro de búsqueda por nombre: ");
 
     String filterSearch = scanner.nextLine();
 
     // Almacena los estudiantes filtrados.
-    List<Student> filteredStudents = new ArrayList<>();
+    Set<Student> filteredStudents = new HashSet<>();
 
-    for (Student student : studentsList) {
+    for (Student student : studentsSet) {
       if (student.getName().toLowerCase().contains(filterSearch.toLowerCase())) {
         filteredStudents.add(student);
       }
@@ -134,11 +133,20 @@ class Main {
     System.out.println("=> Estudiantes filtrados\n" + filteredStudents);
   }
 
-  // Ordena la lista de estudiantes por nombre.
-  private static void sortStudentsByName() {
-    studentsList.sort(Comparator.comparing(Student::getName));
+  // Filtra el conjunto de estudiantes por nombre con letra "A" o "a".
+  private static void filterStudentsByLetterA() {
+    System.out.println("=> Estudiantes filtrados por nombre que contienen 'A' o 'a'");
 
-    System.out.println("=> Lista ordenada por nombre\n" + studentsList);
+    // Almacena los estudiantes filtrados.
+    Set<Student> filteredStudents = new HashSet<>();
+
+    for (Student student : studentsSet) {
+      if (student.getName().toLowerCase().contains("a")) {
+        filteredStudents.add(student);
+      }
+    }
+
+    System.out.println("=> Estudiantes filtrados\n" + filteredStudents);
   }
 
   // Modifica la información del estudiante desde su DNI.
@@ -148,7 +156,7 @@ class Main {
 
     Student studentToModify = findStudentByDni(dniSearch);
 
-    // Valida si el estudiante se encuentra en la lista.
+    // Valida si el estudiante se encuentra en el conjunto.
     if (studentToModify == null) {
       System.out.println("No se encuentra el estudiante que deseas modificar!!");
       return;
@@ -165,8 +173,8 @@ class Main {
       if (! containsStudentByName(newName)) break;
 
       System.out.println("El nombre del estudiante ya se encuentra registrado!!");
-      
-    } while(true);
+
+    } while (true);
 
     // Captura el nuevo DNI del estudiante.
     do {
@@ -177,7 +185,7 @@ class Main {
       if (! containsStudentByDni(newDni)) break;
 
       System.out.println("El DNI del estudiante ya se encuentra registrado!!");
-    } while(true);
+    } while (true);
 
     // Modifica la información del estudiante por referencia.
     studentToModify.setName(newName);
@@ -188,7 +196,7 @@ class Main {
 
   // Obtiene la información de un estudiante desde su DNI.
   private static Student findStudentByDni(String dni) {
-    for (Student student : studentsList) {
+    for (Student student : studentsSet) {
       if (student.getDni().equals(dni)) {
         return student;
       }
@@ -197,9 +205,9 @@ class Main {
     return null;
   }
 
-  // Valida si el nombre del estudiante se encuentra en la lista.
+  // Valida si el nombre del estudiante se encuentra en el conjunto.
   private static boolean containsStudentByName(String name) {
-    for (Student student : studentsList) {
+    for (Student student : studentsSet) {
       if (student.getName().equalsIgnoreCase(name)) {
         return true;
       }
@@ -208,9 +216,9 @@ class Main {
     return false;
   }
 
-  // Valida si el DNI del estudiante se encuentra en la lista.
+  // Valida si el DNI del estudiante se encuentra en el conjunto.
   private static boolean containsStudentByDni(String dni) {
-    for (Student student : studentsList) {
+    for (Student student : studentsSet) {
       if (student.getDni().equals(dni)) {
         return true;
       }
@@ -221,6 +229,6 @@ class Main {
 
   // Genera un ID único para el estudiante.
   private static int generateUniqueId() {
-    return studentsList.size() + 1;
+    return studentsSet.size() + 1;
   }
 }
