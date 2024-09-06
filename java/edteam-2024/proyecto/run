@@ -1,0 +1,7 @@
+#!/bin/sh
+
+find . -name \*.java > paths.txt
+
+javac -d build '@paths.txt'
+
+java build/proyecto/Main

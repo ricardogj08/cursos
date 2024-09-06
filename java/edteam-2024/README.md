@@ -128,15 +128,16 @@ La escritura de datos en Java se realiza utilizando la clase `System.out`.
 
 * Son eventos anómalos que pueden ocurrir en tiempo de ejecución y que alteran el flujo de ejecución normal del programa.
 * Estos eventos representan situaciones inesperadas o errores que deben ser manejados de manera adecuada para garantizar que el programa continúe ejecutándose y así evitar interrupciones.
-* Excepciones comprobadas: son situaciones que ocurren durante la ejecución del programa y que el compilador obliga a manejar.
+* **Excepciones comprobadas**: son situaciones que ocurren durante la ejecución del programa y que el compilador obliga a manejar.
   * Representan condiciones que pueden ocurrir pero que están fuera del control del programador.
   * Estas excepciones deben ser declaradas en el encabezado del método o manejadas mediante bloques `try-catch`.
 * Tipos de excepciones comprobadas:
+  * `Exception`: clase base para todos los tipos de excepciones.
   * `IOException`: indica un error en una operación de entrada o salida (I/O).
   * `FileNotFoundException`: se intenta acceder a un archivo que no existe en el sistema.
   * `ParseException`: se intenta analizar una cadena para convertirla a un formato específico.
   * `SQLException`: representa una excepción específica al momento de interactuar con una base de datos.
-* Excepciones no comprobadas: son situaciones que ocurren durante la ejecución del programa y que el compilador no obliga a manejar de manera explícita.
+* **Excepciones no comprobadas**: son situaciones que ocurren durante la ejecución del programa y que el compilador no obliga a manejar de manera explícita.
   * Representan errores en tiempo de ejecución que podrían haberse evitado con una programación más cuidadosa.
   * Estas excepciones son subclases de `RuntimeException`.
 * Tipos de excepciones no comprobadas:
@@ -144,7 +145,7 @@ La escritura de datos en Java se realiza utilizando la clase `System.out`.
   * `NullPointerException`: ocurre cuando se intenta acceder a un objeto que en `null`.
   * `ArrayIndexOutOfBoundsException`: ocurre cuando se accede a un índice que está fuera del rango válido de un array.
   * `ArithmeticException`: indica un error aritmético (como una división entre cero).
-* `finally` es opcional en un `try-catch`.
+* `finally` es opcional en un `try-catch` y se ejecuta cuando existe o no una excepción.
 
 ## Lanzamiento de excepciones
 
@@ -158,13 +159,14 @@ La escritura de datos en Java se realiza utilizando la clase `System.out`.
 * Son útiles para representar situaciones excepcionales específicas en una aplicación que no están cubiertas por las excepciones predefinidas.
 * Se utiliza para señalar errores y solicitar que se manejen en niveles superiores del programa.
 * Mejora la capacidad de respuesta y robustez del código.
-* `throws`: se utiliza en la firma de un método para declarar que ese método podría lanzar un tipo específico de excepción comprobada. Siempre y cuando la excepción personalizada herede de `Exception`.
-* Lo más recomendado es utilizar excepciones que extiendan de la clase `RuntimeException` (no requieren de la firma de la excepción).
+* `throws`: se utiliza en la firma de un método para declarar que ese método podría lanzar un tipo específico de excepción comprobada. Siempre y cuando la excepción personalizada herede de `Exception` e implemente su constructor.
+* Lo más recomendado es utilizar excepciones no comprobadas que extiendan de la clase `RuntimeException` (no requieren de la firma de la excepción).
 
 ## Stream API
 
 * Es una API que proporciona una forma declarativa de realizar operaciones sobre secuencias de elementos (listas o conjuntos).
 * Permite un procesamiento más conciso y eficiente.
+* `reduce()`: transforma una colección en otro resultado.
 
 ## Method reference
 
@@ -173,6 +175,46 @@ La escritura de datos en Java se realiza utilizando la clase `System.out`.
 * Es conveniente para reemplazar una expresión lambda que simplifique la llamada a un método existente.
 * Se utiliza cuando se llama a un método de instancia de un objeto específico que se pasa como parámetro.
 * Se utiliza cuando se llama a un método estático de un clase (métodos que se pueden utilizar sin la necesidad de instanciar un objeto).
+
+## Default methods
+
+* Agregan nuevas funcionalidades a las interfaces sin afectar las clases que ya las implementan.
+* Permite integrar métodos con implementación.
+* Se agrega `default` al comienzo de la declaración de un método con implementación.
+
+## DATE/TIME API
+
+* Es un conjunto de clases para facilitar la manipulación de fechas y horas:
+  * `LocalDate`: manipulación de fechas.
+  * `LocalTime`: manipulación del tiempo.
+  * `LocalDateTime`: manipulación de fecha y hora.
+
+## Optional
+
+* Es una clase envolvente (contenedor) que ayuda a evitar el manejo directo de valores nulos y puede o no contener un valor.
+
+## Records
+
+* Permite modelar datos inmutables.
+* Son clases que solo almacenan datos sin una lógica adicional.
+* **Inmutabilidad implícita**: todos los atributos de un record son automáticamente `final` (garantiza la inmutabilidad).
+* **Métodos generados automáticamente**: se generan automáticamente los métodos como `equals()`, `hashCode()`, `toString()`, `setters`, `getters`, etc. basados en los campos declarados.
+* **Declaración concisa**: el código se vuelve más simple y conciso que una clase tradicional.
+
+## Var
+
+* Permite la inferencia de tipos de datos.
+* El compilador asigna el tipo de dato adecuado en base al contexto de la declaración de una variable.
+* Se agrega `var` al comienzo de la declaración de una variable.
+
+## Sealed Class
+
+* Una clase sellada (sealed class) permite limitar que clases hijas pueden extenderse de una clase padre o interfaz.
+* Se agrega `sealed` al comienzo de la declaración de una clase o interfaz.
+
+## Enum
+
+* Es una clase que agrupa constantes.
 
 ## Referencias
 

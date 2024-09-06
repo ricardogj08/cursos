@@ -2,6 +2,7 @@ import java.util.List;
 
 class Main {
   public static void main(String[] args) {
+    // Crea una lista inmutable de ordenes.
     List<Order> orders = List.of(
       new Order("A123", 150),
       new Order("B456", 200),

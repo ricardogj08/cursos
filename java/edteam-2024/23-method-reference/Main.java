@@ -9,10 +9,10 @@ class Main {
       new Order("D012", 250)
     );
 
-    // Método lambda.
+    // Método lambda (Práctica anterior).
     orders.forEach(order -> OrderUtils.printOrderInfo(order));
 
-    // Método por referencia.
+    // Método por referencia (Nueva práctica).
     orders.forEach(OrderUtils::printOrderInfo);
   }
 }
