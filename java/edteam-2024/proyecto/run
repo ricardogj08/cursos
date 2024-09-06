@@ -2,6 +2,6 @@
 
 find . -name \*.java > paths.txt
 
-javac -d build '@paths.txt'
+javac -d build @paths.txt || exit 1
 
-java build/proyecto/Main
+cd build && java proyecto/Main

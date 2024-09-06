@@ -56,6 +56,9 @@ La clase `Scanner` en Java se utiliza para la lectura de datos desde consola:
   * `nextDouble()`: leer un número de punto flotante (double).
   * `nextBoolean()`: leer un valor booleano (true/false).
 
+* `BufferedReader`: es una alternativa a `Scanner` para la lectura de información.
+  * Lee la entrada del teclado como un String.
+
 ## Escritura de datos
 
 La escritura de datos en Java se realiza utilizando la clase `System.out`.
@@ -220,3 +223,4 @@ La escritura de datos en Java se realiza utilizando la clase `System.out`.
 
 * [EDteam - Curso: Java desde Cero 2024.](https://ed.team/cursos/java)
 * [Recursos del curso.](https://drive.google.com/drive/folders/16qMnmu8xOnWXz_jwunPrR-d0bNhorFnn)
+* [TwiN - How to compile large Java projects from Terminal.](https://twin.sh/articles/8/how-to-compile-large-java-projects-from-terminal)

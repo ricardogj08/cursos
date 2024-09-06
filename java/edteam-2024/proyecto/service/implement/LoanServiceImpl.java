@@ -3,11 +3,13 @@ package proyecto.service.implement;
 import java.util.ArrayList;
 import java.util.List;
 import java.time.LocalDate;
+import java.util.Optional;
 import proyecto.service.ILoanService;
 import proyecto.model.Loan;
 import proyecto.exception.ErrorMessages;
 import proyecto.exception.DuplicateLoanException;
 import proyecto.exception.LoanNotFoundException;
+import proyecto.exception.StudentNotFoundException;
 import proyecto.model.LoanReport;
 
 // Implementa la lógica de negocio de los prestamos de libros.
@@ -43,6 +45,14 @@ public class LoanServiceImpl implements ILoanService {
     return loans;
   }
 
+  // Filtra todos los prestamos dado un rango de fechas.
+  @Override
+  public List<Loan> getLoansByDateRange(LocalDate startDate, LocalDate endDate) {
+    return loans.stream()
+        .filter(loan -> loan.getLoanDate().isAfter(startDate) && loan.getLoanDate().isBefore(endDate))
+        .toList();
+  }
+
   // Filtra todos los prestamos de un estudiante desde su DNI.
   @Override
   public List<Loan> filterLoansByDniStudent(String studentDni) {
@@ -53,7 +63,7 @@ public class LoanServiceImpl implements ILoanService {
 
   // Genera los reportes de prestamos de libros dado un rango de fechas.
   @Override
-  public List<LoanReport> reportLoans(LocalDate startDate, LocalDate endDate) {
+  public List<LoanReport> filterLoansByDateRange(LocalDate startDate, LocalDate endDate) {
     return loans.stream()
       .filter(loan -> (loan.getLoanDate().isEqual(startDate) || loan.getLoanDate().isAfter(startDate))
           && (loan.getLoanDate().isEqual(endDate) || loan.getLoanDate().isBefore(endDate)))
@@ -64,5 +74,28 @@ public class LoanServiceImpl implements ILoanService {
         loan.getStudent().getName()
       ))
       .toList();
+  }
+
+  // Consulta la información de un préstamo desde su ID.
+  @Override
+  public Optional<Loan> findLoanById(String id) {
+    // Consulta si el préstamo se encuentra en la lista.
+    Optional<Loan> loanToFind = loans.stream()
+      .filter(loan -> loan.getId().equals(id))
+      .findFirst();
+
+    // Comprueba si el préstamo existe.
+    if (loanToFind.isEmpty()) {
+      String errorMessage = ErrorMessages.LOAN_NOT_FOUND.formatMessage(id);
+      throw new LoanNotFoundException(errorMessage);
+    }
+
+    return loanToFind;
+  }
+
+  // Retorna la lista de todos los prestamos registrados.
+  @Override
+  public List<Loan> getAllLoans() {
+    return loans;
   }
 }
