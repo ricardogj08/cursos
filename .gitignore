@@ -1,2 +1,13 @@
+# SQL
 *.sqlite
+
+# Java
 *.class
+
+# Delphi
+*.exe
+*.dcu
+*.local
+*.identcache
+__history/
+__recovery/
