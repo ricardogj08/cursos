@@ -1,0 +1,36 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Formulario'
+  ClientHeight = 269
+  ClientWidth = 317
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = mm1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object mm1: TMainMenu
+    Left = 8
+    Top = 8
+    object Colores1: TMenuItem
+      Caption = 'Colores'
+      object Rojo1: TMenuItem
+        Caption = 'Rojo'
+        OnClick = Rojo1Click
+      end
+      object Verde1: TMenuItem
+        Caption = 'Verde'
+        OnClick = Verde1Click
+      end
+      object Azul1: TMenuItem
+        Caption = 'Azul'
+        OnClick = Azul1Click
+      end
+    end
+  end
+end
