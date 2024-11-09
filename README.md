@@ -6,4 +6,4 @@ Notas y ejemplos de cursos realizados.
 
 ### HTML y CSS
 
-* [EDteam - Mi primera página web.](https://ricardogj08.github.io/cursos/edteam-mi-primera-pagina-web)
+* [EDteam - Mi primera página web.](https://ricardogj08.github.io/cursos/css/edteam-mi-primera-pagina-web)
