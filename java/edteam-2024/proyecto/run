@@ -1,7 +1,19 @@
 #!/bin/sh
 
-find . -name \*.java > paths.txt
+clean_workspace() {
+  rm -rf build paths.txt
+}
 
-javac -d build @paths.txt || exit 1
+main() {
+  trap 'clean_workspace' EXIT
 
-cd build && java proyecto/Main
+  clean_workspace
+
+  find . -name \*.java > paths.txt
+
+  javac -d build @paths.txt || exit 1
+
+  ( cd build && java proyecto/Main )
+}
+
+main
