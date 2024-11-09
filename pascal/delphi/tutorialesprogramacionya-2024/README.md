@@ -1,6 +1,6 @@
 # Tutoriales Programación Ya
 
-Delphi Ya
+Delphi Ya.
 
 ## Referencias
 

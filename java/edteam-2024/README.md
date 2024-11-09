@@ -1,6 +1,6 @@
 # EDteam
 
-Curso: Java desde Cero 2024
+Curso: Java desde Cero 2024.
 
 ## JDKs
 

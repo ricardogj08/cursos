@@ -1,6 +1,6 @@
 # EDteam
 
-Curso: Tipos de datos en Java
+Curso: Tipos de datos en Java.
 
 ## Referencias
 

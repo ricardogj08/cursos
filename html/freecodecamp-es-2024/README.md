@@ -1,6 +1,6 @@
 # freeCodeCamp español
 
-Aprende HTML y CSS - Curso Desde Cero
+Aprende HTML y CSS - Curso Desde Cero.
 
 ## Notas
 
