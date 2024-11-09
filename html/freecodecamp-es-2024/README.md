@@ -1,4 +1,4 @@
-# freeCodeCamp Español
+# freeCodeCamp español
 
 Aprende HTML y CSS - Curso Desde Cero
 

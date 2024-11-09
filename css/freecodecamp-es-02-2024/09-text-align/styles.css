@@ -1,0 +1,25 @@
+h1, h2, p {
+  text-align: center; /* Alinea los títulos y los textos en el centro */
+}
+
+.menu {
+  background-color: burlywood; /* Establece el color del fondo del menú */
+  width: 80%; /* Establece el porcentaje del ancho del menú respecto al body */
+  /* Centra el contenedor del menú */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /* Establece la imagen de fondo de la página */
+}
+
+.flavor {
+  /* Alinea el texto del tipo de café a la izquierda */
+  text-align: left;
+}
+
+.price {
+  /* Alinea el texto del precio a la derecha */
+  text-align: right;
+}

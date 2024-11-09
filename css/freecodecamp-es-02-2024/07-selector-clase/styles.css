@@ -1,0 +1,12 @@
+h1, h2, p {
+  text-align: center; /* Alinea los títulos y los textos en el centro */
+}
+
+/* Selector de clase */
+.menu {
+  background-color: burlywood; /* Establece el color del fondo del menú */
+  width: 80%; /* Establece el porcentaje del ancho del menú respecto al body */
+  /* Centra el contenedor del menú */
+  margin-left: auto;
+  margin-right: auto;
+}

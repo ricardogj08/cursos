@@ -1,0 +1,38 @@
+h1, h2, p {
+  text-align: center; /* Alinea los títulos y los textos en el centro */
+}
+
+.menu {
+  background-color: burlywood; /* Establece el color del fondo del menú */
+  width: 80%; /* Establece el porcentaje del ancho del menú respecto al <body> */
+  /* Centra el contenedor del menú */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Agrega espaciado en el borde del contenedor del menú */
+  /* padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; */
+
+  /* Equivalencia */
+  padding: 20px;
+}
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /* Establece la imagen de fondo de la página */
+}
+
+.flavor, .dessert {
+  text-align: left; /* Alinea el texto del tipo de café y postre a la izquierda */
+  width: 75%; /* Establece el ancho del elemento del tipo de café y postre respecto al <article> */
+}
+
+.price {
+  text-align: right; /* Alinea el texto del precio a la derecha */
+  width: 25%; /* Establece el ancho del elemento del precio respecto al <article> */
+}
+
+.item p {
+  display: inline-block; /* Coloca en elementos de línea cada producto */
+}

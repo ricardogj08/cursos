@@ -1,0 +1,98 @@
+h1, h2, p {
+  text-align: center; /* Alinea los títulos y los textos en el centro */
+}
+
+h1, h2 {
+  font-family: Impact, serif; /* Establece la tipografía de los títulos con fuente de respaldo */
+}
+
+h1 {
+  font-size: 40px; /* Establece el tamaño de los títulos principales */
+  margin-top: 0; /* Elimina el margen superior de los títulos principales */
+  margin-bottom: 15px; /* Establece el margen inferior de los títulos principales */
+}
+
+h2 {
+  font-size: 30px; /* Establece el tamaño de los subtítulos */
+}
+
+.menu {
+  background-color: burlywood; /* Establece el color del fondo del menú */
+  max-width: 500px; /* Establece el ancho máximo del menú respecto al <body> */
+  /* Centra el contenedor del menú */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px; /* Agrega espaciado en el borde del contenedor del menú */
+}
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /* Establece la imagen de fondo de la página */
+  font-family: sans-serif; /* Establece la tipografía de los párrafos */
+  padding: 20px; /* Agrega espaciado en el borde de la página */
+}
+
+.established {
+  font-style: italic; /* Establece el estilo del texto del año de apertura del establecimiento */
+}
+
+hr {
+  height: 4px; /* Establece el alto de la línea horizontal */
+  background-color: brown; /* Establece el color del fondo de la línea horizontal */
+  border: 0; /* Elimina los bordes de la línea horizontal */
+}
+
+.flavor, .dessert {
+  text-align: left; /* Alinea el texto del tipo de café y postre a la izquierda */
+  width: 75%; /* Establece el ancho del elemento del tipo de café y postre respecto al <article> */
+}
+
+.price {
+  text-align: right; /* Alinea el texto del precio a la derecha */
+  width: 25%; /* Establece el ancho del elemento del precio respecto al <article> */
+}
+
+.item p {
+  display: inline-block; /* Coloca en elementos de línea cada producto */
+  margin-top: 5px; /* Establece el margen superior de los artículos */
+  margin-bottom: 5px; /* Establece el margen inferior de los artículos */
+  font-size: 18px; /* Establece el tamaño de los textos de los artículos */
+}
+
+.bottom-line {
+  margin-top: 25px; /* Margen superior de la segunda línea horizontal */
+}
+
+footer {
+  font-size: 14px; /* Establece el tamaño de la fuente de todos los textos del footer */
+}
+
+a {
+  color: black; /* Establece el color de todos los enlaces */
+}
+
+a:visited {
+  color: black; /* Establece el color de los enlaces cuando son visitados */
+}
+
+a:hover {
+  color: brown; /* Establece el color de los enlaces al pasar con encima de ellos */
+}
+
+a:active {
+  color: brown; /* Establece el color de los enlaces al presionarlos */
+}
+
+.address {
+  margin-bottom: 5px; /* Disminuye el margen inferior de la dirección del footer */
+}
+
+img {
+  display: block;
+
+  /* Centra los iconos del menú */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Reduce el margen superior de los iconos del menú */
+  margin-top: -25px;
+}

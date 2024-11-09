@@ -1,0 +1,9 @@
+h1, h2, p {
+  /* Alinea los títulos y los textos en el centro */
+  text-align: center;
+}
+
+body {
+  /* Color del fondo de la página */
+  background-color: burlywood;
+}

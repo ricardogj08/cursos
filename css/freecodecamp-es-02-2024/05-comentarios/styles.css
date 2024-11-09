@@ -1,0 +1,13 @@
+h1, h2, p {
+  text-align: center; /* Alinea los títulos y los textos en el centro */
+}
+
+body {
+  /* Comentarios */
+  /* Color del fondo de la página */
+  /* background-color: burlywood; */
+}
+
+#menu {
+  width: 300px; /* Establece el ancho de la página */
+}
