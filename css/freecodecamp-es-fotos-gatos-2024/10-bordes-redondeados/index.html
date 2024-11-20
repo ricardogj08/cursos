@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>App de Gatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>App de Gatos</h1>
+
+    <main>
+      <section>
+        <h2>Imágenes de Gatos:</h2>
+        <p>Haz click aquí para ver más <a href="https://freecatphotoapp.com" target="_blank" rel="noopener noreferrer">imágenes de gatos.</a></p>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Un lindo gato naranja recostado sobre su espalda." class="imagen-de-gatos borde-redondeado">
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Lista sobre gatos</h2>
+
+        <h3>Cosas que aman los gatos:</h3>
+
+        <ul>
+          <li>Menta gatuna</li>
+          <li>Apuntadores láser</li>
+          <li><s>Lasaña</s></li>
+        </ul>
+
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="Una porción de lasaña en un plato." class="borde-circular">
+          <figcaption>Los gatos <em>aman</em> la lasaña.</figcaption>
+        </figure>
+
+        <h3>Cosas que odian los gatos:</h3>
+
+        <ol>
+          <li>Tratamientos antipulgas</li>
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+        </ol>
+
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Cinco gatos mirando alrededor de un campo." class="imagen-de-gatos borde-redondeado">
+          <figcaption>Los gatos <strong>odian</strong> a otros gatos.</figcaption>
+        </figure>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Formulario</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>¿Tu gato es un gato de interior o de exterior?</legend>
+
+            <label for="interior">
+              <input type="radio" id="interior" name="interior-exterior" value="interior" checked>
+              Interior
+            </label> 
+            <label for="exterior">
+              <input type="radio" id="exterior" name="interior-exterior" value="exterior">
+              Exterior
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>¿Cuál es la personalidad de tu gato?</legend>
+
+            <label for="carinoso">
+              <input type="checkbox" id="carinoso" name="personalidad" value="carinoso" checked>
+              Cariñoso
+            </label>
+            <label for="perezoso">
+              <input type="checkbox" id="perezoso" name="personalidad" value="perezoso">
+              Perezoso
+            </label>
+            <label for="energico">
+              <input type="checkbox" id="energico" name="personalidad" value="energico">
+              Enérgico
+            </label>
+          </fieldset>
+
+          <input type="text" name="foto-gato-url" placeholder="URL de la foto de tu gato" required><br>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><small>Sin Derechos de Autor - <a href="https://www.freecodecamp.org/espanol" target="_blank" rel="noopener noreferrer">freeCodeCamp.org</a></small></p>
+    </footer>
+  </body>
+</html>

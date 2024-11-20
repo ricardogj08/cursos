@@ -1,0 +1,35 @@
+.contenedor-principal {
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  background-color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rectangulo {
+  padding: 5px;
+  margin: 5px;
+}
+
+.px {
+  background-color: crimson;
+  width: 200px;
+}
+
+.vw {
+  background-color: darkmagenta;
+
+  /* 20% del ancho de la ventana (relativo) */
+  width: 20vw;
+}
+
+.em {
+  background-color: green;
+
+  /* Respectivo al tamaño de la letra del contenedor (relativo) */
+  width: 15em;
+
+  /* 2 veces el tamaño de la fuente respectivo
+  al tamaño de la fuente del contenedor */
+  font-size: 2em;
+}

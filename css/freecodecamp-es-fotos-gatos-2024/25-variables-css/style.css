@@ -1,0 +1,28 @@
+:root {
+  /* Variables CSS globales */
+  --color-body: Lavender;
+  --color-heading: dodgerblue;
+  --text-font-default: 16px;
+}
+
+body {
+  --text-size-heading: 36px;
+  --text-font-heading: monospace;
+
+  /* Llamado a variables CSS globales con valor por defecto */
+  background-color: var(--color-body, gray);
+}
+
+h1 {
+  /* Llamado a variables CSS globales */
+  color: var(--color-heading);
+
+  font-size: var(--text-size-heading);
+  font-family: var(--text-font-heading);
+}
+
+p {
+  /* Compatibilidad con navegadores que no soportan variables CSS */
+  font-size: 16px;
+  font-size: var(--text-font-default, 16px);
+}

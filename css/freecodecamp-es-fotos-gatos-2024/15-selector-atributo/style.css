@@ -1,0 +1,40 @@
+* {
+  font-size: 16px; /* Establece el tamaño de la fuente para todos los párrafos */  
+  font-family: monospace; /* Establece la fuente tipográfica para todos los párrafos */
+}
+
+h1 {
+  font-size: 35px; /* Establece el tamaño de la fuente de los títulos principales */
+  font-family: Lobster, sans-serif; /* Establece la fuente tipográfica de los títulos principales con respaldo */
+}
+
+h2 {
+  font-size: 23px; /* Establece el tamaño de la fuente de los subtítulos */
+  font-family: Roboto, sans-serif; /* Establece la fuente tipográfica para los subtítulos con respaldo */
+}
+
+/* Selector de atributo */
+/* Imágenes que tienen el atributo "alt" */
+img[alt] {
+  border-radius: 50%;
+}
+
+/* Selector de atributo */
+/* Campos de tipo "radio" */
+input[type="radio"] {
+  margin: 5px;
+}
+
+/* Selector de atributo */
+/* Campos de tipo "checkbox" */
+input[type="checkbox"] {
+  margin: 8px;
+}
+
+/* Selector de atributo en base al valor de su atributo */
+a[href="https://www.freecodecamp.org/espanol"] {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+

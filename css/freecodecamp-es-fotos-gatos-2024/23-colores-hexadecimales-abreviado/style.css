@@ -1,0 +1,45 @@
+* {
+  font-size: 16px; /* Establece el tamaño de la fuente para todos los párrafos */  
+  font-family: monospace; /* Establece la fuente tipográfica para todos los párrafos */
+}
+
+h1 {
+  font-size: 35px; /* Establece el tamaño de la fuente de los títulos principales */
+  font-family: Lobster, sans-serif; /* Establece la fuente tipográfica de los títulos principales con respaldo */
+}
+
+h2 {
+  font-size: 23px; /* Establece el tamaño de la fuente de los subtítulos */
+  font-family: Roboto, sans-serif; /* Establece la fuente tipográfica para los subtítulos con respaldo */
+}
+
+h1 {
+  /* color: #ff0000; */
+
+  /* Abreviación */
+  color: #f00;
+}
+
+section {
+  /* background-color: #00ffff; */
+
+  /* Abreviación */
+  background-color: #0fF;
+}
+
+img {
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  /* border-color: #00ff00; */
+
+  /* Abreviación */
+  border-color: #0f0;
+}
+
+a {
+  /* color: #ff00ff; */
+
+  /* Abreviación */
+  color: #f0f;
+}

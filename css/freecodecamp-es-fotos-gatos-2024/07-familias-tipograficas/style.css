@@ -1,0 +1,22 @@
+h1 {
+  font-size: 35px; /* Establece el tamaño de la fuente de los títulos principales */
+
+  /* Establece la fuente tipográfica de los títulos principales con respaldo */
+  font-family: Lobster, sans-serif;
+}
+
+h2 {
+  /* Establece el tamaño de la fuente de los subtítulos */
+  font-size: 23px;
+
+  /* Establece la fuente tipográfica para los subtítulos con respaldo */
+  font-family: Roboto, sans-serif;
+}
+
+p {
+  /* Establece el tamaño de la fuente para todos los párrafos */
+  font-size: 16px;
+  
+  /* Establece la fuente tipográfica para todos los párrafos */
+  font-family: monospace;
+}

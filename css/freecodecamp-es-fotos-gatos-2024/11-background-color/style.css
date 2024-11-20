@@ -1,0 +1,34 @@
+h1 {
+  font-size: 35px; /* Establece el tamaño de la fuente de los títulos principales */
+  font-family: Lobster, sans-serif; /* Establece la fuente tipográfica de los títulos principales con respaldo */
+}
+
+h2 {
+  font-size: 23px; /* Establece el tamaño de la fuente de los subtítulos */
+  font-family: Roboto, sans-serif; /* Establece la fuente tipográfica para los subtítulos con respaldo */
+}
+
+p {
+  font-size: 16px; /* Establece el tamaño de la fuente para todos los párrafos */  
+  font-family: monospace; /* Establece la fuente tipográfica para todos los párrafos */
+}
+
+.imagen-de-gatos {
+  width: 200px; /* Establece el ancho de las imágenes de gatos */
+  border-width: 10px; /* Establece el ancho del borde de la imagen */
+  border-color: blue; /* Establece el color del borde de la imagen */
+  border-style: solid; /* Estilo del borde de la imagen */
+}
+
+.borde-redondeado {
+  border-radius: 20px; /* Redondea los bordes de las imágenes */
+}
+
+.borde-circular {
+  border-radius: 50%; /* Establece el borde en circulo o elipse */
+}
+
+.contenedor-listas {
+  /* Establece el color del fondo del contenedor de las listas */
+  background-color: silver;
+}

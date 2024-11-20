@@ -1,0 +1,32 @@
+* {
+  font-size: 16px; /* Establece el tamaño de la fuente para todos los párrafos */  
+  font-family: monospace; /* Establece la fuente tipográfica para todos los párrafos */
+}
+
+h1 {
+  font-size: 35px; /* Establece el tamaño de la fuente de los títulos principales */
+  font-family: Lobster, sans-serif; /* Establece la fuente tipográfica de los títulos principales con respaldo */
+}
+
+h2 {
+  font-size: 23px; /* Establece el tamaño de la fuente de los subtítulos */
+  font-family: Roboto, sans-serif; /* Establece la fuente tipográfica para los subtítulos con respaldo */
+}
+
+.texto-azul {
+  color: blue;
+}
+
+/* Selecciona este estilo por cascada */
+.texto-morado {
+  color: purple;
+}
+
+a {
+  text-decoration: purple wavy underline;
+}
+
+/* Selecciona este estilo por especificidad */
+.sin-subrayado {
+  text-decoration: none;
+}
