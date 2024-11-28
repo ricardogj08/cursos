@@ -26,8 +26,8 @@ Aprende HTML y CSS: Curso Desde Cero
 * El orden de las clases agregados en el atributo `class` de un elemento HTML no afecta su especificidad.
 * Colores hexadecimales (`#000000`) en base 16 (`0-9` y `a-f`), se compone de 3 partes:
 
-         00   00    00
-        Rojo Verde Azul
+     00   00    00
+    Rojo Verde Azul
 
 * El dígito `0` es el número más bajo en el código de colores hexadecimales, y representa la ausencia total de color.
 * El dígito `F` es el número más alto en el código de colores hexadecimales, y representa el brillo máximo.

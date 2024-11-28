@@ -31,8 +31,7 @@ Mostrar información sobre como se creó una base de datos:
 	SHOW CREATE DATABASE dbname;
     SHOW CREATE SCHEMA dbname;   -- también
 
-> `CHARACTER SET` es el conjunto de caracteres que se utiliza para almacenar y mostrar información.
->
+> `CHARACTER SET` es el conjunto de caracteres que se utiliza para almacenar y mostrar información.  
 >`COLLATIONS` es un conjunto de reglas que se utiliza para comparar caracteres.
 
 Establecer la base de datos a utilizar para ejecutar sentencias SQL:
@@ -322,5 +321,5 @@ Visualizar todos los privilegios de una cuenta de usuario:
 
 * [freeCodeCamp - MySQL Course for Beginners.](https://youtu.be/uWkcxasFWzQ?si=bOin7Rg932PvYQd7)
 * [EDteam - Curso: MySQL.](https://ed.team/cursos/mysql)
-* [freeCodeCamp - MySQL Database.](https://youtu.be/ER8oKX5myE0?si=YOBYm6na00rVLC-C)
+* [freeCodeCamp - MySQL Database: Full Course.](https://youtu.be/ER8oKX5myE0?si=YOBYm6na00rVLC-C)
 * [MariaDB Server Documentation.](https://mariadb.com/kb/en/documentation)

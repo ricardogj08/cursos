@@ -6,20 +6,20 @@ Use PHP to Create an MVC Framework.
 
 Instalar las dependencias de la aplicación:
 
-	cd freecodecamp-2023-create-mvc-framework
-	composer install
+    cd freecodecamp-2023-create-mvc-framework
+    composer install
 
 Copiar el archivo `env.example` a `.env` y configurar la aplicación:
 
-	cp env.example .env
+    cp env.example .env
 
 Ejecutar las migraciones de la base de datos:
 
-	php migrations.php
+    php migrations.php
 
 ## Ejecución
 
-	php -S localhost:8080 -t public/
+    php -S localhost:8080 -t public/
 
 * <http://localhost:8080>
 
