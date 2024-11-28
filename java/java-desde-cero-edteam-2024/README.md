@@ -40,14 +40,18 @@ Curso: Java desde Cero 2024.
 * Métodos: camelCase.
 * Constantes: mayúsculas separados por guiones bajos.
 
-    // Declaración y asignación de una constante.
-    final int MAX_VALUE = 100;
+```
+// Declaración y asignación de una constante.
+final int MAX_VALUE = 100;
+```
 
 ## Lectura datos
 
 La clase `Scanner` en Java se utiliza para la lectura de datos desde consola:
 
-    Scanner scanner = new Scanner(System.in);
+```
+Scanner scanner = new Scanner(System.in);
+```
 
 * Métodos disponibles en la clase `Scanner`:
   * `nextLine()`: leer una línea completa de texto.
@@ -69,8 +73,10 @@ La escritura de datos en Java se realiza utilizando la clase `System.out`.
 
 ## Compilar y ejecutar
 
-    javac FICHERO
-    java CLASE
+```
+javac FICHERO
+java CLASE
+```
 
 ## Arrays
 

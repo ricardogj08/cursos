@@ -15,19 +15,27 @@ Curso: Introducción a la terminal (Gratis).
 
 * Consultar el directorio de trabajo actual:
 
-    pwd
+```
+pwd
+```
 
 * Listar el contenido de un directorio:
 
-    ls
+```
+ls
+```
 
 * Mostrar un mensaje de ayuda de como utilizar un comando:
 
-    ls --help
+```
+ls --help
+```
 
 * Listar con mayor información el contenido de un directorio:
 
-    ls -l
+```
+ls -l
+```
 
 * Descripción de las columnas del comando `ls -l`:
   * 1ra columna: si comienza con `d` es un directorio, `l` es un link (acceso directo) o `-` es un archivo. Después siguen los permisos del archivo, `r` de lectura, `w` de escritura o `x` de ejecución. Los permisos se agrupan en tercias: usuario, grupo de usuarios y otros usuarios que no pertenecen al grupo de usuarios.
@@ -42,161 +50,237 @@ Curso: Introducción a la terminal (Gratis).
 
 * Listar con mayor información el contenido de un directorio y los tamaños de los archivos de manera amigable:
 
-    ls -l -h
+```
+ls -l -h
+```
 
 * Listar con mayor información el contenido de un directorio, los tamaños de los archivos de manera amigable y sin colorear la distinción de los tipos de archivos:
 
-    ls -l -h --color=never
+```
+ls -l -h --color=never
+```
 
 * Listar con mayor información el contenido de un directorio, los tamaños de los archivos de manera amigable y coloreando la distinción de los tipos de archivos:
 
-    ls -l -h --color=auto
+```
+ls -l -h --color=auto
+```
 
 * Versión reducida del comando anterior:
 
-    ls -lh --color=auto
+```
+ls -lh --color=auto
+```
 
 * Crear comandos reducidos:
 
-    alias ls='ls -lh --color=auto'
+```
+alias ls='ls -lh --color=auto'
+```
 
 * Listar con mayor información el contenido de un directorio, los tamaños de los archivos de manera amigable, coloreando la distinción de los tipos de archivos y mostrando archivos ocultos:
 
-    ls -lha --color=auto
+```
+ls -lha --color=auto
+```
 
 * Moverse entre los diferentes directorios (change directory):
 
-    cd /etc
+```
+cd /etc
+```
 
 * Moverse al directorio de trabajo actual:
 
-    cd .
+```
+cd .
+```
 
 * Moverse al directorio anterior respecto al directorio de trabajo actual en jerarquía:
 
-    cd ..
+```
+cd ..
+```
 
 * Moverse al directorio anterior respecto al directorio de trabajo actual en jerarquía e ingresar a un directorio al mismo tiempo:
 
-    cd ../apt
+```
+cd ../apt
+```
 
 * Regresar al directorio anterior después de haber ingresado el comando `cd`:
 
-    cd -
+```
+cd -
+```
 
 * Moverse al directorio personal del usuario actual:
 
-    cd ~
+```
+cd ~
+```
 
 * Ver el contenido de un archivo:
 
-    cat ~/.bashrc
+```
+cat ~/.bashrc
+```
 
 * Ver el contenido de un archivo mostrando el número de líneas:
 
-    cat -n ~/.bashrc
+```
+cat -n ~/.bashrc
+```
 
 * Ver el contenido de un archivo mostrando el número de líneas con paginación:
 
-    cat -n /etc/profile | less
+```
+cat -n /etc/profile | less
+```
 
 > Se utiliza la tecla de <kbd>espacio</kbd> para cambiar de página.  
 > Con la tecla <kbd>q</kbd> sale de la paginación.
 
 * Ingresar como usuario super administrador (`root`) de manera temporal (super user do):
 
-    sudo cat /etc/wpa_supplicant.conf
+```
+sudo cat /etc/wpa_supplicant.conf
+```
 
 > Para ejecutar el comando `sudo` el usuario debe pertenecer al grupo `sudo` o `wheel`.
 
 * Imprimir un mensaje en la terminal:
 
-    echo 'Hola mundo!'
+```
+echo 'Hola mundo!'
+```
 
 * Crear un archivo con el comando `echo`:
 
-    echo 'Hola mundo!' > prueba.txt
+```
+echo 'Hola mundo!' > prueba.txt
+```
 
 * Copiar un archivo como super administrador:
 
-    sudo cp prueba.txt /etc
+```
+sudo cp prueba.txt /etc
+```
 
 * Adjuntar más contenido a un archivo con el comando `echo`:
 
-    echo 'Hola mundo!' > prueba.txt
-    echo 'Estoy contento de aprender los comando en Linux' >> prueba.txt
+```
+echo 'Hola mundo!' > prueba.txt
+echo 'Estoy contento de aprender los comando en Linux' >> prueba.txt
+```
 
 * Crear un archivo vacío:
 
-    touch archivo.txt
+```
+touch archivo.txt
+```
 
 * Crear un directorio (make directory):
 
-    mkdir miproyecto
+```
+mkdir miproyecto
+```
 
 * Crear un directorio con subdirectorios:
 
-    mkdir -p miproyecto/facturacion/productos
+```
+mkdir -p miproyecto/facturacion/productos
+```
 
 * Copiar un archivo (copy):
 
-    cp ORIGEN DESTINO
+```
+cp ORIGEN DESTINO
+```
 
 * Copiar un archivo desde una ruta absoluta:
 
-    cp papas.txt /home/usuario/miproyecto/facturacion/productos
+```
+cp papas.txt /home/usuario/miproyecto/facturacion/productos
+```
 
 * Copiar un archivo desde una ruta relativa:
 
-    cp arroz.txt ../../../miproyecto/facturacion/productos
+```
+cp arroz.txt ../../../miproyecto/facturacion/productos
+```
 
 * Copiar un archivo con otro nombre solo con rutas absolutas:
 
-    cp /home/usuario/miproyecto2/facturacion/productos/carne.txt /home/usuario/miproyecto/facturacion/productos/nuevacarne.txt
+```
+cp /home/usuario/miproyecto2/facturacion/productos/carne.txt /home/usuario/miproyecto/facturacion/productos/nuevacarne.txt
+```
 
 * Copiar un directorio de manera recursiva:
 
-    cp -R miproyecto miproyecto2
+```
+cp -R miproyecto miproyecto2
+```
 
 * Borrar archivos:
 
-    rm ARCHIVO
+```
+rm ARCHIVO
+```
 
 * Borrar un archivo con confirmación:
 
-    rm -i ARCHIVO
+```
+rm -i ARCHIVO
+```
 
 * Borrar un directorio vacío:
 
-    rm -d DIRECTORIO
+```
+rm -d DIRECTORIO
+```
 
 * Borrar un directorio:
 
-    rm -r DIRECTORIO
+```
+rm -r DIRECTORIO
+```
 
 * Renombrar un archivo o directorio (move):
 
-    mv ARCHIVO NUEVO_ARCHIVO
+```
+mv ARCHIVO NUEVO_ARCHIVO
+```
 
 * Mover un archivo o directorio a otra ruta:
 
-    mv RUTA NUEVA_RUTA
+```
+mv RUTA NUEVA_RUTA
+```
 
 * Buscar archivos o directorios con un cierto nombre:
 
-    find RUTA -name 'NOMBRE_ARCHIVO'
+```
+find RUTA -name 'NOMBRE_ARCHIVO'
+```
 
 * Buscar archivos con una cierta extensión:
 
-    find RUTA -name '*.EXTENSION'
+```
+find RUTA -name '*.EXTENSION'
+```
 
 * Buscar archivos o directorios con un cierto nombre sin ser sensible a mayúsculas y minúsculas:
 
-    find RUTA -iname 'NOMBRE_ARCHIVO'
+```
+find RUTA -iname 'NOMBRE_ARCHIVO'
+```
 
 * Buscar solo directorios con un cierto nombre:
 
-    find RUTA -type d -iname 'NOMBRE_DIR'
+```
+find RUTA -type d -iname 'NOMBRE_DIR'
+```
 
 ## Referencias
 

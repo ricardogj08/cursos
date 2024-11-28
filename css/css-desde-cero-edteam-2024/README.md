@@ -27,14 +27,16 @@ Curso: CSS desde cero (2024).
 
 * Valores reutilizables dentro de CSS.
 
-    /* Nivel superior dentro del DOM. */
-    :root {
-        --color: green;
-    }
+```
+/* Nivel superior dentro del DOM. */
+:root {
+    --color: green;
+}
 
-    body {
-        background: var(--color);
-    }
+body {
+    background: var(--color);
+}
+```
 
 ## Selectores
 
