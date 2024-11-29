@@ -13,6 +13,8 @@ Curso: Introducción a la terminal (Gratis).
 * El gestor de paquetes de Ubuntu es `apt` (advanced package tool).
 * Con la tecla <kbd>tab</kbd> autocompleta en la terminal.
 
+## Listar archivos
+
 * Consultar el directorio de trabajo actual:
 
 ```
@@ -84,6 +86,8 @@ alias ls='ls -lh --color=auto'
 ls -lha --color=auto
 ```
 
+## Cambiar de directorios
+
 * Moverse entre los diferentes directorios (change directory):
 
 ```
@@ -120,6 +124,8 @@ cd -
 cd ~
 ```
 
+## Ver archivos
+
 * Ver el contenido de un archivo:
 
 ```
@@ -155,6 +161,8 @@ sudo cat /etc/wpa_supplicant.conf
 echo 'Hola mundo!'
 ```
 
+## Crear archivos
+
 * Crear un archivo con el comando `echo`:
 
 ```
@@ -180,6 +188,8 @@ echo 'Estoy contento de aprender los comando en Linux' >> prueba.txt
 touch archivo.txt
 ```
 
+## Crear directorios
+
 * Crear un directorio (make directory):
 
 ```
@@ -191,6 +201,8 @@ mkdir miproyecto
 ```
 mkdir -p miproyecto/facturacion/productos
 ```
+
+## Copiar archivos
 
 * Copiar un archivo (copy):
 
@@ -222,6 +234,8 @@ cp /home/usuario/miproyecto2/facturacion/productos/carne.txt /home/usuario/mipro
 cp -R miproyecto miproyecto2
 ```
 
+## Eliminar archivos
+
 * Borrar archivos:
 
 ```
@@ -246,6 +260,8 @@ rm -d DIRECTORIO
 rm -r DIRECTORIO
 ```
 
+## Renombrar o mover archivos
+
 * Renombrar un archivo o directorio (move):
 
 ```
@@ -257,6 +273,8 @@ mv ARCHIVO NUEVO_ARCHIVO
 ```
 mv RUTA NUEVA_RUTA
 ```
+
+## Buscar archivos
 
 * Buscar archivos o directorios con un cierto nombre:
 
