@@ -1,0 +1,19 @@
+#!/bin/sh
+
+clean_workspace() {
+  rm -rf build sources.txt
+}
+
+main() {
+  trap 'clean_workspace' EXIT
+
+  clean_workspace
+
+  find src -name \*.java > sources.txt
+
+  javac -d build @sources.txt
+
+  java -classpath build edteam/Main
+}
+
+main
